@@ -4,6 +4,8 @@
 /tmp
 /out-tsc
 /bazel-out
+/cypress/videos
+/cypress/report
 
 # Node
 /node_modules
