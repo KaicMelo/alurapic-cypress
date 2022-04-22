@@ -1,10 +1,9 @@
-describe('Usabilidade tela inicial', () => {
+describe('Cadastro de usuário alura pic', () => {
 
     beforeEach(() => {
         cy.visit('https://alura-fotos.herokuapp.com')
 
-    })
-
+    });
     it('verifica mensagens validacao', () => {
         cy.contains('a','Register now').click();
         cy.contains('button','Register').click();
@@ -41,20 +40,7 @@ describe('Usabilidade tela inicial', () => {
         cy.contains('button','Register').click();
 
         cy.contains('ap-vmessage','Mininum length is 8').should('be.visible');
-    })
-    it('Fazer login de usuário valido', () => {
-        cy.login('flavio','123');
-
-        cy.contains('a','(Logout)').should('be.visible');
-    })
-    it('Fazer login de usuário invalido', () => {
-        cy.login('flavia','12397');
-
-        cy.on('window:alert',(str) => {
-            expect(str).to.equals('Invalid user name or password')
-        });
-    })
-
+    });
     const users = require('../../fixtures/users.json');
 
     users.map(user => {

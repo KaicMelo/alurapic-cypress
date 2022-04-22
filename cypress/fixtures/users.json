@@ -1,0 +1,20 @@
+[
+    {
+        "email": "helloa@cypress.io",
+        "fullName": "helloa Melo",
+        "userName": "helloa",
+        "password": "123456789"
+    },
+    {
+        "email": "Jaqueline@cypress.io",
+        "fullName": "Jaqueline Melo",
+        "userName": "jaqueline",
+        "password": "123456789"
+    },
+    {
+        "email": "Marcia@cypress.io",
+        "fullName": "Marcia Melo",
+        "userName": "jarcia",
+        "password": "123456789"
+    }
+]
